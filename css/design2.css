@@ -1,0 +1,378 @@
+html {
+	background-color: #869960;
+}
+
+/* Custom Font */
+
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Questrial'), local('Questrial-Regular'), url(https://fonts.gstatic.com/s/questrial/v9/QdVUSTchPBm7nuUeVf70viFluW44JQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* End Custom Font */
+
+body {
+	font-family: 'Questrial', sans-serif;
+	font-size: 95%;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+header {
+	padding-top: 20px;
+	padding-bottom: 0;
+	color: #FFF;
+	background-color: #617140;
+	/* Background image insertion
+	background-image: url(../images/background.jpg);
+	background-position: center right;
+	*/
+}
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/* Conditional CSS for Responsive Design */
+@media screen and (min-width: 1200px) {
+
+	body {
+		font-size: 16px;
+	}
+
+	.container {
+		max-width: 1100px;
+	}
+
+}
+/**/
+
+/* Conditional CSS for Responsive Design */
+@media screen and (max-width: 600px) {
+
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+}
+/**/
+
+.content-area {
+	border-top: 3px solid #E5E9DC;
+	border-bottom: 3px solid #E5E9DC;
+	background-color: #FFF;
+}
+
+.content-area h2 {
+	font-size: 200%;
+	font-weight: normal;
+	text-shadow: 2px 10px 15px #999;
+}
+
+.content-area p {
+	text-align: justify;
+}
+
+.main-area {
+	width: 65%;
+	float: left;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+.nav-area {
+	width: 35%;
+	float: left;
+	background-color: #E5E9DC;
+	background-image: linear-gradient(to bottom, #E5E9DC, #FFF);
+	padding: 20px 20px 20px 20px;
+	box-sizing: border-box;
+	font-size: 85%;
+}
+
+/* Conditional CSS for Responsive Design */
+@media screen and (max-width: 700px) {
+
+	.main-area, 
+	.nav-area {
+		width: auto;
+		float: none;
+	}
+
+	.main-area {
+		padding-right: 0;
+	}
+
+}
+/**/
+
+.fix {
+	clear: both;
+}
+
+/* Site Navigation */
+
+.site-nav {
+	margin-bottom: 0px;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav li {
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+}
+
+.site-nav a {
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	padding: 10px 20px 10px 20px;
+	border: 1px solid #E5E9DC;
+	border-bottom: none;
+}
+
+.site-nav a:hover {
+	background-color: #E5E9DC;
+	color: #869960;
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+
+	.site-nav li {
+		width: 33.332%;
+		margin-right: 0;
+
+	}
+
+	.site-nav a {
+		padding: 15px 0;
+		margin-right: 5px;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+}
+
+/* End Site Navigation */
+
+/* Banner Overlay */
+
+.image-banner {
+	position: relative;
+}
+
+.image-banner img {
+	display: block;
+}
+
+.banner-description {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, .65);
+	padding: 1px 15px;
+}
+
+/* End Banner Overlay */
+
+/* Table Styles */
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table th {
+	text-align: left;
+	background-color: #869960;
+	color: #FFF;
+	text-shadow: 1px 1px rgba(0, 0, 0, .4);
+}
+
+table th, 
+table td {
+	border: 1px solid #869960;
+	padding: 5px;
+	vertical-align: top;
+}
+
+table tbody tr:nth-child(even) td{
+	background-color: #E5E9DC;
+}
+
+/* End Table Styles */
+
+/* Form Styles */
+
+form {
+	background-color: #ECECEC;
+	padding: 30px 30px;
+}
+
+input[type="email"],
+input[type="text"],
+fieldset {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	padding: 0px 10px;
+	height: 40px;
+	font-family: sans-serif;
+	font-size: 90%;
+	margin-bottom: 15px;
+	border: 1px solid lightgrey;
+	outline: 0;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
+	border: 1px solid #798A56;
+	box-shadow: inset 2px 2px rgba(0, 0, 0, .05);
+}
+
+input[type="submit"] {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	background-color: #869960;
+	color: #FFF;
+	padding: 10px 0;
+	border: 1px solid 1px #798A56;
+	border-radius: 3px;
+	font-family: sans-serif;
+	font-size: 90%;
+	margin-bottom: 10px;
+}
+
+input[type="submit"]:hover, 
+input[type="submit"]:focus {
+	border: 1px solid #535E3B;
+	background-color: #798A56;
+}
+
+.hidden-label {
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.checkbox-text {
+	font-size: 85%;
+	color: #777;
+}
+
+/* End Form Styles */
+
+/* Sprites Nav */
+
+.sprites-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.sprites-menu li {
+	float: left;
+	list-style: none;
+	margin-right: 20px;
+}
+
+.sprites-menu a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/sprites.png);
+	text-indent: -9900px;
+	background-repeat: no-repeat;
+}
+
+.sprites-menu a:hover {background-position: -50px 0;}
+
+.sprites-info a {background-position: 0 -50px;}
+.sprites-info a:hover {background-position: -50px -50px;}
+
+.sprites-form a {background-position: 0 -100px;}
+.sprites-form a:hover {background-position: -50px -100px;}
+
+/* End Sprites Nav */
+
+.box-A {
+	background-color: #E5E9DC;
+	padding: 5px 20px 5px 20px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .10);
+}
+
+/* Conditional CSS for Responsive Design */
+@media screen and (max-width: 600px) {
+
+	.box-A {
+		display: none;
+	}
+
+}
+/**/
+
+.audio {
+	padding-bottom: 20px;
+}
+
+header h1 {
+	margin: 0;
+	font-weight: bolder;
+}
+
+header h2 {
+	margin: 0;
+	padding: 0;
+}
+
+header p {
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+footer {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	color: #FFF;
+}
+
+.article-body {
+	margin: 0;
+}
+
+h1 {
+	font-size: 250%;
+	font-weight: lighter;
+}
+
+header p span {
+	color: blue;
+}
+
+
+
